@@ -1,0 +1,11 @@
+.contacts__link{
+    color: var(--primary-text-color);
+}
+.contacts__icon{
+    fill: var(--primary-text-color);
+    transition: fill var(--primary-anim);
+}
+.contacts__link:focus .contacts__icon,
+.contacts__link:hover .contacts__icon{
+    fill: var(--accent-text-color);
+}

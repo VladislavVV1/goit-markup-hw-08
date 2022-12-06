@@ -1,0 +1,23 @@
+.subscribe{
+    padding-top: 12px;
+}
+.subscribe__title{
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--primary-white-color);
+    margin-bottom: 20px;
+}
+.subscribe__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.subscribe__icon{
+    fill: var(--primary-white-color);
+}
+.subscribe__link:hover,
+.subscribe__link:focus{
+    background-color: var(--accent-text-color);
+}

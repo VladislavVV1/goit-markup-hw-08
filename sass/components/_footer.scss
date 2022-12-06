@@ -1,0 +1,33 @@
+.footer{
+    background-color: #2F303A;  
+}
+.footer__container{
+    display: flex;
+    gap: 70px;
+}
+.footer__logo-part{
+    color: var(--primary-white-color);
+}
+.address__text{
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-white-color) ;
+    font-style: normal;
+}
+.address__link{
+    font-size: 14px;
+    line-height: 1.71;
+    color: rgba(255, 255, 255, 0.6);
+    display: block;
+    font-style: normal;
+}
+.footer{
+    padding-top: 60px ;
+    padding-bottom: 60px;
+}
+.address{
+    margin-top: 20px;
+}
+.address__item--mb:not(:last-child){
+    margin-bottom: 9px;
+}

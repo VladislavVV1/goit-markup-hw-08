@@ -1,0 +1,49 @@
+.agreement__desc{
+    font-size: 14px;
+    line-height: 1.71;
+    color: #757575;
+}
+.agreement__link{
+    color: #2196F3;
+    text-underline-offset: 3p;
+}
+.agreement{
+    margin: 0px 12px 30px 13px;
+    display: flex; 
+    align-items: center;  
+    justify-content: center;
+}
+.agreement__button{
+    padding: 10px 52px;
+    display: block;
+    margin: 0 auto; 
+}
+.agreement__wrapper{
+    position: relative;
+}
+.agreement__icon{
+    position: absolute ;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.agreement__checkbox{
+    width: 16px;
+    height: 15px;
+    opacity: 0;
+    margin-left: 7px;
+}
+.uncheck {
+  opacity: 1;
+  transition: 300ms;
+}
+.agreement__checkbox:checked + .agreement__icon .uncheck {
+  opacity: 0;
+}
+.check {
+  opacity: 0;
+  transition: 300ms;
+}
+.agreement__checkbox:checked + .agreement__icon .check {
+  opacity: 1;
+}

@@ -9,3 +9,8 @@
     --primary-icon-color: #AFB1B8;
     --primary-anim: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+$view-port:(
+    'mobile': 480px,
+    'tablet': 768px,
+    'desktop': 1200px,
+);

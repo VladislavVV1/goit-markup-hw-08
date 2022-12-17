@@ -1,5 +1,7 @@
 .subscribe{
+    @media screen and (min-width:map-get($view-port, 'tablet'))  {
     padding-top: 12px;
+    }
 }
 .subscribe__title{
     font-size: 14px;
@@ -7,6 +9,10 @@
     text-transform: uppercase;
     color: var(--primary-white-color);
     margin-bottom: 20px;
+
+    @media screen and (max-width:1199px)  {
+        text-align: center;
+    }
 }
 .subscribe__list{
     display: flex;

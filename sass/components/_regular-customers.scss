@@ -1,13 +1,20 @@
 .regular-customers__list{
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
-    gap: 30px;
+        flex-wrap: wrap;
+        gap: 30px;
+    
+}
+.regular-customers__item{
+    @media screen and (max-width:479px) {
+        margin: 0 auto;
+    }
 }
 .regular-customers__icon{
     transition: fill var(--primary-anim);
 }
 .regular-customers__link{
-    width: 170px;
+    width: 210px;
     height: 92px;
     display: flex;
     justify-content: center;
@@ -18,8 +25,17 @@
     &:hover,
     &:focus{
     border-color: var(--accent-text-color);
+    }
+
+    @media screen and (min-width:map-get($view-port, 'tablet')) {
+        width: 226px;
+    }
+
+    @media screen and (min-width:map-get($view-port, 'desktop')) {
+        width: 170px;
+    }
 }
-}
+
 .regular-customers__link:hover .regular-customers__icon,
 .regular-customers__link:focus .regular-customers__icon{
     fill: var(--accent-text-color);

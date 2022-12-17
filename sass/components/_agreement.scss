@@ -1,14 +1,18 @@
 .agreement__desc{
+    font-size: 12px;
+    line-height: calc(14/12);
+    color: #757575;
+    @media screen and (min-width: map-get($view-port, 'desktop') ){
     font-size: 14px;
     line-height: 1.71;
-    color: #757575;
+}
 }
 .agreement__link{
     color: #2196F3;
     text-underline-offset: 3p;
 }
 .agreement{
-    margin: 0px 12px 30px 13px;
+    margin: 0px auto 30px auto;
     display: flex; 
     align-items: center;  
     justify-content: center;

@@ -1,5 +1,9 @@
 .work{
     padding-top: 0px;
+    display: none;
+    @media screen and (min-width:map-get($view-port, 'desktop')) {
+        display: block;
+    }
 }
 .work__list{
     display: flex;

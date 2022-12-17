@@ -1,6 +1,12 @@
 .header{
     border-bottom: 1px solid #ECECEC;
 }
+.header__logo{
+    @media screen and (max-width:767px) {
+        padding-top:16px ;
+        padding-bottom:16px ;
+    }
+}
 .header__container{
     display: flex;
     justify-content: space-between;
@@ -10,8 +16,11 @@
     display: flex;
     align-items: center;
     gap: 93px;
+    @media screen and (max-width:767px) {
+        display: none;
+    }
 }
-.header__list{
+.header-nav-list{
     display: flex;
     align-items: center;
     gap: 50px;

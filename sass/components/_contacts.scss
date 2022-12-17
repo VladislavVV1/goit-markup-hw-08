@@ -1,5 +1,24 @@
+.contacts{
+    @media screen and (min-width: map-get($view-port, 'desktop') ){
+        display: flex;
+        align-items: center;
+        gap: 50px;
+    }
+    @media screen and (max-width:1199px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+}
+}
 .contacts__link{
+    @media screen and (max-width:767px) {
+        display: none;
+    }
     color: var(--primary-text-color);
+    @media screen and (max-width:1199px) {
+        padding: 0;
+        justify-content: left;
+    }
 }
 .contacts__icon{
     fill: var(--primary-text-color);

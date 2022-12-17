@@ -20,7 +20,7 @@
 .mail-form__container{
     @media screen and (max-width:1199px)  {
         display: block;
-        width: fit-content;
+        max-width: 450px;
         margin: 0 auto;
     }
     @media screen and (min-width:map-get($view-port, 'desktop'))  {
@@ -29,8 +29,6 @@
 }
 .mail-form__label{
     position: relative;
-    display: inline-block;
-    width: 450px;
     @media screen and (min-width:map-get($view-port, 'desktop'))  {
     width: 358px;
     }
